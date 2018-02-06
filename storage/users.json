@@ -1,0 +1,17 @@
+{
+    "asdfasdf": {
+        "username": "asdfasdf",
+        "password": "asdfasdf",
+        "events": [
+            {
+                "name": "af",
+                "description": "event",
+                "time": " 0:00",
+                "day": "24",
+                "month": "11",
+                "year": "2017",
+                "eventNum": "0"
+            }
+        ]
+    }
+}

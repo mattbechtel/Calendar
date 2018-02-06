@@ -1,0 +1,55 @@
+html
+  head
+    title Calendar
+    meta(name='viewport', content='width=device-width, initial-scale =1')    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='/javascripts/calendar.js')
+    script(src='/javascripts/addEvent.js')
+    link(rel='stylesheet', href='/stylesheets/createAccount.css?ver=1.0.0')
+    link(rel='stylesheet', href='/stylesheets/LogIn.css?ver=1.0.1')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/calendar.css')  
+    script(src='/tether/js/tether.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/d3/d3.min.js')
+
+     
+  
+  body
+    .Wrapper-Calendar
+      #calbg
+        form.float-left
+          .form-group
+            input#eventToAddName.form-control(type='text', placeholder='Event Name')
+            input#eventToAddDes.form-control(type='text', placeholder='Event Description')          
+            select#eventToAddTime.form-control(name="selectTime")
+          select#selectDay.form-control(name='selectDay')
+            option(value='-') Day
+            -for(var i = 1; i < 32; i++){
+            option(value="#{i}") #{i}  
+            -}    
+          select#selectMonth.form-control(name='selectMonth')
+            option(value='-') Month
+            option(value='1') January
+            option(value='2') Febuary
+            option(value='3') March
+            option(value='4') April
+            option(value='5') May
+            option(value='6') June
+            option(value='7') July
+            option(value='8') August
+            option(value='9') September
+            option(value='10') October
+            option(value='11') November
+            option(value='12') December    
+          select#selectYear.form-control(name='selectYear')          
+            -for(var i = 2017; i < 2026; i++){
+            option(value="#{i}") #{i}  
+            -}   
+          .form-group
+            button#addEvent.btn.btn-success.float-left(type='submit') Add Event
+        .form-group
+          a#logout.btn.btn-danger.float-right(type='submit', href='/') Logout
+          button#buttonPrev prev
+          button#buttonNext next
+          #calendar

@@ -1,0 +1,171 @@
+#calbg {
+  left: 0;
+  top: 0;
+  background: url("/images/space2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 3800px;
+  width: auto;
+   background-attachment: fixed;
+  background-repeat: repeat-y;
+}
+
+.name{
+  font-color: white;
+  color: white;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+}
+
+#calendar {
+  width: 100%
+}
+
+h1 {
+  text-align: center;
+  overflow: auto;
+  text-transform: uppercase;
+}
+
+.day div.today {
+  text-align: right;
+  float: right;
+  color: orange;
+  font-size: 25px;
+}
+
+
+.button {
+  float: right;
+  margin-right: 5px;
+}
+
+#calendar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  width: 100%;
+
+}
+
+#calendar li {
+  list-style: none;
+  padding: 5px;
+  display: block;
+  float: left;
+  width: 14.32%;
+  box-sizing: border-box;
+  border: 1px solid #383737;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+ul.weekdays {
+  height: 40px;
+  background: #313131;
+}
+
+ul.weekdays li {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 20px;
+  border: none !important;
+  padding: 10px 6px;
+  color: #EBE6E6;
+  font-size: 13px;
+}
+
+.days li {
+  height: 160px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
+  opacity: .75
+}
+
+.days li:hover {
+  background: grey;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: 10px 15px 7px #C7C7C7;
+  transition-duration: 750ms;
+}
+
+.date {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  color: orange;
+  width: 25px;
+  float: right;
+  font-size: 25px;
+}
+
+.delete{
+  font-size: 8px;
+  position: center;
+  padding: 5px;
+}
+
+p {
+  clear: both;
+  display: block;
+  font-size: 10px;
+  border-radius: 4px;
+  padding-left: 5px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #666;
+  line-height: 14px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  text-decoration: none;
+}
+
+.eventName {
+  color: light-grey;
+  font-size: 15px;
+}
+.eventInfo {
+  color: black;
+  margin: 3px 0 7px 0;
+  text-decoration: none;
+}
+
+.eventBox{
+  overflow-y: auto;
+  max-height: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.other-month {
+  background: white;
+  color: white;
+}
+
+@media(max-width:760px) {
+  #calendar .weekdays {
+    display: none;
+  }
+  #calendar li {
+    height: auto !important;
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -1px;
+  }
+  #calendar .other-month {
+    display: none;
+  }
+  #calendar .date {
+    float: none;
+  }
+}

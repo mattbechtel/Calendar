@@ -1,0 +1,31 @@
+
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/space2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#label{
+  font-family:"Algerian";
+}
+
+#username img{
+  height: 15px;
+  width: 15px;
+}
+
+#password img{
+  height: 15px;
+  width: 15px;
+}
+
+h1{
+  text-align: center;
+  font-family:"Times New Roman", sans-serif;
+  padding: auto;
+}

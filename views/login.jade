@@ -1,0 +1,24 @@
+
+extends layout
+
+block includes
+  script(src="/javascripts/login.js")
+
+block content
+  div#bg
+    .container
+      form
+        div.form-group
+          h1 Calendar
+          
+          div.form-group 
+            input.form-control(id="username", type="text", placeholder="Username")
+          
+          div.form-group
+            input.form-control(id="password", type= "password", placeholder="Password")
+            
+          .form-group.d-inline  
+            button.btn.btn-success#login(type="submit") Login
+            a.btn.btn-danger.float-right#createAccount(type="submit", href="/createAccount") Create Account
+          
+      

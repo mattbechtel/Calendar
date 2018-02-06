@@ -1,0 +1,36 @@
+header{
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+}
+
+legend{
+    font-family: "Times New Roman", sans-serif;
+
+}
+
+#Intro{
+    font-family:"Algerian";
+    text-align: center;
+    border-color: silver;
+    border: solid;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+form{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.7);
+    padding: 30px 32px;
+    border-top-color: rgba(135,206,250,0.4);
+    border-bottom-color: rgba(135,206,250,0.4);
+    border-left-color: rgba(135,206,250,0.4);
+    border-right-color: rgba(135,206,250,0.4);
+}
+
+.pull-right{
+  float: right;
+}

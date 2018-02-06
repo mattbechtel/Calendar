@@ -1,0 +1,21 @@
+extends layout
+
+block includes
+  script(src="/javascripts/createAccount.js")
+
+block content
+  div#bg
+    .container
+      form
+        div.form-group
+          h1 Create Calendar Account
+          
+          div.form-group Username
+            input.form-control(id="username", type="text", placeholder="(6 or more characters, no symbols or spaces)")
+          
+          div.form-group Password
+            input.form-control(id="password", type= "password", placeholder="(6 or more characters, no symbols or spaces)")
+          
+          .form-group.d-inline#submit  
+            button.btn.btn-success#submit(type="submit") Submit
+            
